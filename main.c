@@ -1,23 +1,16 @@
 #include <stdio.h>
 
-int main(int argc, char const *argv[]) {
-    int retry;
+int main(void) {
+    int input;
 
-    do {
-        int no;
+    printf("Enter a number: ");
+    scanf("%d", &input);
 
-        printf("整数を入力せよ：");
-        scanf("%d", &no);
-
-        if (no % 2 == 0) {
-            printf("%dは偶数です\n", no);
-        } else {
-            printf("%dは奇数です\n", no);
-        }
-
-        printf("もう一度？(9as:終了 0:続行)");
-        scanf("%d", &retry);
-    } while (retry == 0);
+    if (input < 10 && input > 0) {
+        printf("%dは一桁の自然数です。\n", input);
+    } else {
+        printf("%dは一桁の自然数ではありません\n", input);
+    }
 
     return 0;
 }
