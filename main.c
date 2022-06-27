@@ -1,40 +1,45 @@
 #include <stdio.h>
 
 int main(void) {
-    int month;
+    double inputX, inputY;
 
-    printf("月を入力してください: ");
-    scanf("%d", &month);
+    int isContinue = 0;
 
-    if (0 < month && month < 13) {
-        int days;
-        switch (month) {
-            case 1:
-            case 3:
-            case 5:
-            case 7:
-            case 8:
-            case 10:
-            case 12:
-                days = 31;
-                break;
-            case 4:
-            case 6:
-            case 9:
-            case 11:
-                days = 30;
-                break;
-            case 2:
-                days = 28;
-                break;
-            default:
-                days = 0;
-                break;
+    do {
+        printf("2つの実数を入力してください\n");
+
+        printf("X: ");
+        scanf("%lf", &inputX);
+        printf("Y: ");
+        scanf("%lf", &inputY);
+
+        puts("演算を選択してください:");
+        printf("1: 加算 2: 減算 3: 乗算 4: 除算:");
+
+        int inputOperation;
+        scanf("%d", &inputOperation);
+
+        if (inputOperation == 1) {  // 加算
+            printf("%lf + %lf = %lf\n", inputX, inputY, inputX + inputY);
+
+        } else if (inputOperation == 2) {  // 減算
+            printf("%lf - %lf = %lf\n", inputX, inputY, inputX - inputY);
+
+        } else if (inputOperation == 3) {  // 乗算
+            printf("%lf * %lf = %lf\n", inputX, inputY, inputX * inputY);
+
+        } else if (inputOperation == 4) {  // 除算
+            printf("%lf / %lf = %lf\n", inputX, inputY, inputX / inputY);
+
+        } else {
+            printf("Errror!\n");
         }
-        printf("%d月は%d日あります。\n", month, days);
-    } else {
-        puts("そんな月はありません");
-    }
+
+        printf("続けますか? (0: 続ける 1: 終了): ");
+        scanf("%d", &isContinue);
+    } while (isContinue == 0);
 
     return 0;
 }
+
+
