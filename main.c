@@ -1,27 +1,39 @@
 #include <stdio.h>
 
-#include <math.h>
-
 int main(void) {
-    int a, b, c;
+    int month;
 
-    printf("aを入力:");
-    scanf("%d", &a);
+    printf("月を入力してください: ");
+    scanf("%d", &month);
 
-    printf("bを入力:");
-    scanf("%d", &b);
-
-    printf("cを入力:");
-    scanf("%d", &c);
-
-    int judge = b * b - 4 * a * c;
-
-    if (judge > 0) {
-        printf("2つの実数解が存在する\n");
-    } else if (judge == 0) {
-        printf("重解が存在する\n");
+    if (0 < month && month < 13) {
+        int days;
+        switch (month) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                days = 31;
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                days = 30;
+                break;
+            case 2:
+                days = 28;
+                break;
+            default:
+                days = 0;
+                break;
+        }
+        printf("%d月は%d日あります。\n", month, days);
     } else {
-        printf("2つの虚数解が存在する\n");
+        puts("そんな月はありません");
     }
 
     return 0;
