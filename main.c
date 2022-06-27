@@ -15,7 +15,7 @@ int main(int argc, char const *argv[]) {
             printf("%dは奇数です\n", no);
         }
 
-        printf("もう一度？(0:終了 9:続行)");
+        printf("もう一度？(9as:終了 0:続行)");
         scanf("%d", &retry);
     } while (retry == 0);
 
