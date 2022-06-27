@@ -1,15 +1,14 @@
 #include <stdio.h>
 
 int main(void) {
-    int input;
+    int numberA, numberB, numberC;
+    printf("Enter three numbers: ");
+    scanf("%d %d %d", &numberA, &numberB, &numberC);
 
-    printf("Enter a number: ");
-    scanf("%d", &input);
-
-    if (input < 10 && input > 0) {
-        printf("%dは一桁の自然数です。\n", input);
+    if(numberA <= numberB && numberB <= numberC) {
+        puts("OK");
     } else {
-        printf("%dは一桁の自然数ではありません\n", input);
+        puts("NG");
     }
 
     return 0;
