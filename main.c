@@ -1,31 +1,22 @@
 #include <stdio.h>
 
 int main(int argc, char const *argv[]) {
-    int a, b;
+    int sum = 0;
+    int count = 0;
+    int shouldRetry;  // 0で終了、1でリトライ
 
-    printf("Enter two numbers: ");
-    scanf("%d %d", &a, &b);
+    do {
+        int input;
+        printf("整数値を入力してください: ");
+        scanf("%d", &input);
 
-    int operation;
-    printf("Enter operation: ");
-    scanf("%d", &operation);
+        sum += input;
+        count += 1;
 
-    switch (operation) {
-        case 1:
-            printf("%d + %d = %d\n", a, b, a + b);
-            break;
-        case 2:
-            printf("%d - %d = %d\n", a, b, a - b);
-            break;
-        case 3:
-            printf("%d * %d = %d\n", a, b, a * b);
-            break;
-        case 4:
-            printf("%d / %d = %d\n", a, b, a / b);
-            break;
-        default:
-            printf("Invalid operation\n");
-            break;
-    }
+        printf("続けますか? (1:続ける, 0:終了): ");
+        scanf("%d", &shouldRetry);
+    } while (shouldRetry == 1);
+
+    printf("合計は%dで平均は%.2fです。\n", sum, (double)sum / count);
     return 0;
 }
