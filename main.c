@@ -1,23 +1,24 @@
 #include <stdio.h>
 
 int main(int argc, char const *argv[]) {
-    int shoudRetry;
-    
-    do {
-        int input;
+    int inputA, inputB;
 
-        printf("整数を入力してください: ");
-        scanf("%d", &input);
+    puts("二つの整数を入力してください");
+    printf("A: ");
+    scanf("%d", &inputA);
+    printf("B: ");
+    scanf("%d", &inputB);
 
-        if (input == 0) {
-            puts("その数は0です。");
-        } else if (input > 0) {
-            puts("その数は正です。");
-        } else {
-            puts("その数は負です。");
-        }
-        printf("もう一度やりますか? (1:はい, 0:いいえ): ");
-        scanf("%d", &shoudRetry);
-    } while (shoudRetry == 1);
+    int min = (inputA < inputB) ? inputA : inputB;
+    int max = (inputA > inputB) ? inputA : inputB;
+
+    printf("%d以上%d以下の全て整数の和は", min, max);
+
+    int sum = 0;
+    while (min != max + 1) {
+        sum += min++;
+    }
+    printf("%dです\n", sum);
+
     return 0;
 }
