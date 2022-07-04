@@ -6,9 +6,9 @@ int main(int argc, char const *argv[]) {
     printf("正の整数を入力してください: ");
     scanf("%d", &input);
 
-    while (input >= 0){
-        printf("%d ", input);
-        input --;
+    int i = 0;
+    while (i <= input) {
+        printf("%d", i++);
     }
 
     printf("\n");
