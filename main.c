@@ -1,22 +1,16 @@
 #include <stdio.h>
 
 int main(int argc, char const *argv[]) {
-    int 🤮 = 0;
-    int 🤪 = 0;
-    int 😋;  // 0で終了、1でリトライ
+    int input;
 
-    do {
-        int 😊;
-        printf("整数値を入力してください: ");
-        scanf("%d", &😊);
+    printf("正の整数を入力してください: ");
+    scanf("%d", &input);
 
-        🤮 += 😊;
-        🤪 += 1;
+    while (input >= 0){
+        printf("%d ", input);
+        input --;
+    }
 
-        printf("続けますか? (1:続ける, 0:終了): ");
-        scanf("%d", &😋);
-    } while (😋 == 1);
-
-    printf("合計は%dで平均は%.2fです。\n", 🤮, (double)🤮 / 🤪);
+    printf("\n");
     return 0;
 }
