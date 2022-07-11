@@ -6,7 +6,7 @@
 
 ## 閲覧方法
 
-[「n Commits」](https://github.com/shirokuma89dev/2D-InformationProcessing/commits/main)ってところを見るとコードが見れます。見たいところをクリックしてパネルの右側の緑色の範囲を見てください。
+[「n Commits」](https://github.com/shirokuma89dev/2D-InformationProcessing/commits/main)ってところを見るとコードが見れます。見たいところをクリックしてパネルの右側の緑色の範囲を見てください。（くまちゃんの変更履歴だお）
 
 <img width="659" alt="スクリーンショット 2022-07-11 11 20 18" src="https://user-images.githubusercontent.com/47915291/178176713-7c048dcc-4f43-40b9-98a0-4ee0cf1c27fb.png">
 
