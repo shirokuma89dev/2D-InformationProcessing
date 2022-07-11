@@ -6,15 +6,15 @@
 
 ## 閲覧方法
 
-[「n Commits」](https://github.com/shirokuma89dev/2D-InformationProcessing/commits/main)ってところを見るとコードが見れます。見たいところをクリックしてパネルの右側の緑色の範囲を見てください。Ubdate README.mdとかは無視してね。（くまちゃんの変更履歴だお）
-
-**注意⚠️：Splitモードにしてね！！！あとmain.c以外は見なくてもいいよ。**
+[「n Commits」](https://github.com/shirokuma89dev/2D-InformationProcessing/commits/main)ってところを見ると履歴一覧が見れます。見たいコミットをクリックして右上のBrowse files → main.cで見れます。
 
 <img width="659" alt="スクリーンショット 2022-07-11 11 20 18" src="https://user-images.githubusercontent.com/47915291/178176713-7c048dcc-4f43-40b9-98a0-4ee0cf1c27fb.png">.
 
 <img width="1792" alt="スクリーンショット 2022-07-11 11 20 44" src="https://user-images.githubusercontent.com/47915291/178176744-9d7b3cc2-4afb-4828-af4e-fe6963a8c397.png">
 
-<img width="1353" alt="スクリーンショット 2022-07-11 11 21 54" src="https://user-images.githubusercontent.com/47915291/178176871-406ec0db-86f3-4546-ad58-0ef8a3810e57.png">
+<img width="457" alt="スクリーンショット 2022-07-11 11 47 21" src="https://user-images.githubusercontent.com/47915291/178179464-ef676f3b-fe45-42e9-a631-15b66ba69da1.png">
+
+<img width="1358" alt="スクリーンショット 2022-07-11 11 47 38" src="https://user-images.githubusercontent.com/47915291/178179487-bf8a1d02-ba9d-4793-a9f4-92b959e1cda8.png">
 
 ## 注意事項
 
