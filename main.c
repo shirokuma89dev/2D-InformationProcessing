@@ -6,13 +6,9 @@ int main(int argc, char const *argv[]) {
     int amount;
     scanf("%d", &amount);
 
-    if (amount <= 1) return 0;
-
     while (amount-- > 0) {
-        putchar('*');
+        puts("*");
     }
-
-    putchar('\n');
 
     return 0;
 }
