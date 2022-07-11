@@ -1,23 +1,24 @@
 #include <stdio.h>
 
 int main(int argc, char const *argv[]) {
-    int quantity;
+    int input;  //入力
 
-    printf("整数は何個:");
-    scanf("%d", &quantity);
-
-    int i, amount = {0, 0};
-
-    while (i < quantity) {
-        printf("No.%d", ++i);
-
-        int input;
+    do {
+        printf("正の整数を入力してください: ");
         scanf("%d", &input);
-        amount += input;
-    }
+        if (input <= 0) {
+            puts("\a正でない数を入力しないでください。");
+        }
+    } while (input <= 0);
 
-    printf("合計値:%d\n", amount);
-    printf("平均値:%d\n", amount / quantity);
+    // input > 0
+    printf("その数を逆から読むと");
+
+    while (input > 0) {
+        printf("%d", input % 10);
+        input /= 10;
+    }
+    puts("DEATH!!!");
 
     return 0;
 }
