@@ -9,7 +9,7 @@ int main(int argc, char const *argv[]) {
     int counter = 2;
     while (counter < input) {
         printf("%d ", counter);
-        counter += 2;
+        counter *= 2;
     }
 
     return 0;
