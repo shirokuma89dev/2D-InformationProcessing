@@ -1,24 +1,25 @@
 #include <stdio.h>
 
 int main(int argc, char const *argv[]) {
-    int input;  //入力
-
-    do {
-        printf("正の整数を入力してください: ");
+    puts("正の整数値を加算します。終了するには-9999を入力：");
+    int sum = 0;
+    while (1) {
+        int input;
+        printf("整数値：");
         scanf("%d", &input);
-        if (input <= 0) {
-            puts("\a正でない数を入力しないでください。");
+
+        if (input == -9999) {
+            break;
+        } else if (input < 0) {
+            printf("負の整数値は加算できません。\n");
+            continue;
         }
-    } while (input <= 0);
 
-    // input > 0
-    printf("その数を逆から読むと");
-
-    while (input > 0) {
-        printf("%d", input % 10);
-        input /= 10;
+        sum += input;
     }
-    puts("DEATH!!!");
+
+    puts("-------------------------");
+    printf("加算結果：%d\n", sum);
 
     return 0;
 }
