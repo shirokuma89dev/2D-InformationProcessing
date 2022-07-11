@@ -1,15 +1,23 @@
 #include <stdio.h>
 
-int main(void) {
-    int number;
+int main(int argc, char const *argv[]) {
+    int quantity;
 
-    printf("正の整数：");
-    scanf("%d", &number);
+    printf("整数は何個:");
+    scanf("%d", &quantity);
 
-    while (number-- > 0){
-        putchar('*');
+    int i, amount = {0, 0};
+
+    while (i < quantity) {
+        printf("No.%d", ++i);
+
+        int input;
+        scanf("%d", &input);
+        amount += input;
     }
-    putchar('\n');
-    
+
+    printf("合計値:%d\n", amount);
+    printf("平均値:%d\n", amount / quantity);
+
     return 0;
 }
