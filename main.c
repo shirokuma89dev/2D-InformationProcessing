@@ -1,16 +1,18 @@
 #include <stdio.h>
 
 int main(int argc, char const *argv[]) {
-    printf("正の整数を入力せよ：");
+    printf("正の整数：");
 
-    int input;
-    scanf("%d", &input);
+    int amount;
+    scanf("%d", &amount);
 
-    int counter = 2;
-    while (counter < input) {
-        printf("%d ", counter);
-        counter *= 2;
+    if (amount <= 1) return 0;
+
+    while (amount-- > 0) {
+        putchar('*');
     }
+
+    putchar('\n');
 
     return 0;
 }
