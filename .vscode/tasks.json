@@ -8,7 +8,7 @@
             "args": [
                 "main.c",
                 "-o",
-                "runner",
+                "Debug/runner",
                 "--debug"
             ],
             "group": {

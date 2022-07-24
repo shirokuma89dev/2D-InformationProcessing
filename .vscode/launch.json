@@ -5,7 +5,7 @@
             "name": "GCC Debug",
             "type": "lldb",
             "request": "launch",
-            "program": "${workspaceFolder}/runner",
+            "program": "${workspaceFolder}/Debug/runner",
             "args": [],
             "cwd": "${workspaceFolder}",
             "preLaunchTask": "Build with gcc"
