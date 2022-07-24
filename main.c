@@ -1,14 +1,7 @@
 #include <stdio.h>
 
-int main(int argc, char const *argv[]) {
-    printf("正の整数：");
-
-    int amount;
-    scanf("%d", &amount);
-
-    while (amount-- > 0) {
-        puts("*");
-    }
+int main(void) {
+    printf("ねこ");
 
     return 0;
 }
